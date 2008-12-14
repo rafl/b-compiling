@@ -3,7 +3,7 @@ use warnings;
 
 package B::Compiling;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use B;
 use XSLoader;
