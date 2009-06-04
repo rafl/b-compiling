@@ -8,6 +8,8 @@ STATIC SV *compiling_sv;
 
 MODULE = B::Compiling  PACKAGE = B::Compiling
 
+PROTOTYPES: DISABLE
+
 void
 PL_compiling ()
     PPCODE:
