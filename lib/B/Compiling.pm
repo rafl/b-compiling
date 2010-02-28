@@ -10,9 +10,13 @@ use XSLoader;
 
 XSLoader::load(__PACKAGE__, $VERSION);
 
+my $syms;
+
+BEGIN { $syms = [qw(PL_compiling PL_subname)] }
+
 use Sub::Exporter -setup => {
-    exports => ['PL_compiling'],
-    groups  => { default => ['PL_compiling'] },
+    exports => $syms,
+    groups  => { default => $syms },
 };
 
 1;

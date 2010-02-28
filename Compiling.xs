@@ -15,6 +15,13 @@ PL_compiling ()
     PPCODE:
         XPUSHs (compiling_sv);
 
+SV *
+PL_subname ()
+	CODE:
+		RETVAL = PL_subname;
+	OUTPUT:
+		RETVAL
+
 BOOT:
     {
         HV *cop_stash = gv_stashpv ("B::COP", 0);
