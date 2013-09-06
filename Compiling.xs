@@ -2,8 +2,6 @@
 #include "perl.h"
 #include "XSUB.h"
 
-#include "ppport.h"
-
 STATIC SV *compiling_sv;
 
 MODULE = B::Compiling  PACKAGE = B::Compiling
