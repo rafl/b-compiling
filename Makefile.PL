@@ -1,14 +1,7 @@
 use strict;
 use warnings;
-use inc::Module::Install;
+use ExtUtils::MakeMaker;
 
-name 'B-Compiling';
-all_from 'lib/B/Compiling.pm';
-
-requires 'B';
-requires 'XSLoader';
-requires 'Sub::Exporter';
-
-extra_tests;
-
-WriteAll;
+WriteMakefile(
+    NAME => 'B::Compiling',
+);
