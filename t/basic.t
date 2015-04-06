@@ -11,5 +11,5 @@ BEGIN {
     ok($cop = PL_compiling, 'returns the same reference every time');
 
     isa_ok($cop, 'B::COP');
-    is($cop->file, 't/basic.t', 'basic sanity');
+    like($cop->file, qr{t/basic.t$}, 'basic sanity');
 }
