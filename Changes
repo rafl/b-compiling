@@ -1,4 +1,4 @@
-0.04  Mon, 13 Apr 2015 15:07:44 -0400
+0.06  Mon, 13 Apr 2015 15:10:54 -0400
   * Relax tests to cope with absolute path names in addition to relative ones
     (Chris Weyl).
 
